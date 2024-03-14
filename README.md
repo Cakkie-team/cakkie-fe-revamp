@@ -38,10 +38,6 @@ Pull requests should be named using the following convention:
 
 `[feature/bug/chore/hotfix] feature-name`
 
-## Deployment
-
-This project is deployed to [Netlify](https://www.netlify.com/). The `main` branch is automatically deployed to the [production environment](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) and all other branches are deployed to [deploy previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/).
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -49,7 +45,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Tailwindcss Docs](https://tailwindcss.com/docs/)
-- [Styled icons docs](https://github.com/styled-icons/styled-icons#-styled-icons)
+- [React icons docs](https://github.com/react-icons)
 
 
 
