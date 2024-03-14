@@ -1,0 +1,7 @@
+export * from "./About"
+export * from "./AboutIcing"
+export * from "./Catalog"
+export * from "./Hero"
+export * from "./topNav"
+export * from "./ContactUs"
+export * from "./HowtoOrder"
