@@ -1,11 +1,11 @@
 import { TopNav } from "@/components/landing/_components";
 import { Footer } from "@/components/footer/Footer";
 
-export const TermsAndConditions = () => {
+export default function Page () {
   return (
     <section>
       <TopNav />
-      <section className="flex flex-col gap-4 text-cakkie items-center justify-center lg:max-w-5xl mx-auto px-6 py-10">
+      <section className="flex flex-col gap-4 text-cakkie items-center justify-center w-full mx-auto py-6 px-4 sm:px-10 md:px-20 sm:py-10">
         <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
           <h3 className="text-3xl font-bold">Terms of service</h3>
 
@@ -467,7 +467,7 @@ export const TermsAndConditions = () => {
           </ol>
         </div>
 
-        <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
+        <div className="flex flex-col justify-start items-start gap-4 w-full text-cakkie">
           <h4 className="text-xl font-semibold">
             3c. Treating others unfairly
           </h4>
@@ -507,7 +507,7 @@ export const TermsAndConditions = () => {
           </ol>
         </div>
 
-        <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
+        <div className="flex flex-col justify-start w-full items-start gap-4 text-cakkie">
           <h4 className="text-xl font-semibold">
             3d. Abusing our feedback system
           </h4>

@@ -453,3 +453,16 @@ export function SharedIcon() {
     </svg>
   );
 }
+
+
+export   const navLinks = [
+  { name: "WhitePaper", link: "/whitepaper" },
+  { name: "Introduction", link: "/introduction" },
+  { name: "Vision and Mission", link: "/vision" },
+  { name: "Token Overview", link: "/overview" },
+  { name: "Roadmap", link: "/roadmap" },
+  { name: "Tokenomics", link: "/tokenomics" },
+  { name: "Use Cases", link: "/cases" },
+  { name: "Security and decentralization", link: "/security" },
+  { name: "Conclusion", link: "/conclusion" },
+];

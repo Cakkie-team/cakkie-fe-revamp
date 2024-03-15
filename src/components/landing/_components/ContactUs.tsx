@@ -19,7 +19,7 @@ export function ContactUs() {
   return (
     <div
     id="contact-us"
-    className="w-full sm:px-10  relative flex flex-col lg:flex-row items-start lg:items-center justify-start lg:justify-center px-4 py-8 sm:py-12 bg-[#FFF5D4]">
+    className="w-full sm:px-10  relative flex flex-col xl:flex-row items-center justify-center px-4 py-8 sm:py-12 bg-[#FFF5D4]">
       <div className="w-full h-full relative max-w-[500px] flex flex-col items-center justify-start gap-y-6">
         <h1 className="font-semibold text-3xl text-cakkie">Contact Us</h1>
         <Form {...form}>
@@ -79,7 +79,7 @@ export function ContactUs() {
             />
           </form>
         </Form>
-        <Button className="font-medium w-fit text-[#FFF5DC] bg-cakkie rounded-md h-12">
+        <Button className="font-medium w-[150px] self-end text-[#FFF5DC] bg-cakkie rounded-md h-12">
           Submit
         </Button>
       </div>
