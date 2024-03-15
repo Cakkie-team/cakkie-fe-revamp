@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function RoadMap() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>RoadMap</b>
+     <h2 className="text-desktop font-semibold sm:text-xl">
+        RoadMap
       </h2>
       <Image
         src="/images/roadmap.png"
@@ -17,7 +17,7 @@ export default function RoadMap() {
       />
       <div className="flex gap-y-3 mb-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold"> Pre-App Launch (Q1 2024):</p>
-        <ol className="flex flex-col w-full gap-y-2 pl-4 items-start list-decimal">
+        <ol className="flex flex-col w-full gap-y-2 pl-10 items-start list-decimal">
           <li>
             Launch Cakkie mobile application to the community for initial
             engagement, point earning (convertible to Icing as airdrops), user
@@ -31,7 +31,7 @@ export default function RoadMap() {
       </div>
       <div className="flex gap-y-3 mb-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold"> Token Presale and Launch (Q2 2024):</p>
-        <ol className="flex flex-col w-full gap-y-2 pl-4 items-start list-decimal">
+        <ol className="flex flex-col w-full gap-y-2 pl-10 items-start list-decimal">
           <li>
             Conduct token presale to seed initial liquidity and community
             support.
@@ -49,7 +49,7 @@ export default function RoadMap() {
       </div>
       <div className="flex gap-y-3 mb-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold">Platform Expansion (Q3 2024):</p>
-        <ol className="flex flex-col w-full gap-y-2 pl-4 items-start list-decimal">
+        <ol className="flex flex-col w-full gap-y-2 pl-10 items-start list-decimal">
           <li>
             Publicly launch Cakkie application, allowing users to access the
             platform and engage in social interactions, buying and selling
@@ -67,7 +67,7 @@ export default function RoadMap() {
       </div>
       <div className="flex gap-y-3 mb-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold">Enhancements and Scaling (Q4 2024):</p>
-        <ol className="flex flex-col w-full gap-y-2 pl-4 items-start list-decimal">
+        <ol className="flex flex-col w-full gap-y-2 pl-10 items-start list-decimal">
           <li>
             Implement staking and governance features to incentivize token
             holders and empower the community.

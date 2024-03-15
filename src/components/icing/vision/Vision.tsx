@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Vision() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>Vision and Mision</b>
+      <h2 className="text-desktop font-semibold sm:text-xl">
+        Vision and Mision
       </h2>
       <Image
         src="/images/vision.png"

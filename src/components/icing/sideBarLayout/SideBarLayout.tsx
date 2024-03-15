@@ -26,7 +26,7 @@ export const Container = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <div
-        className={`w-full  right-0 z-50 fixed bg-white border-b border-gray-200  flex justify-between items-center `}
+        className={`w-full  right-0 sm:right-[16px] z-50 fixed bg-white border-b border-gray-200  flex justify-between items-center `}
       >
         <div className="px-4 justify-between   w-full flex items-center">
           <div className="flex items-center gap-x-2">
@@ -40,27 +40,27 @@ export const Container = ({ children }: { children: React.ReactNode }) => {
               />
             </div>
             <Button
-                    type="button"
-                    onClick={onClose}
-                    className="block  h-10  border rounded-md bg-none"
-                  >
-                    <CgMenuLeft className="text-xl  sm:text-[22px] text-zinc-600" />
-                  </Button>
+              type="button"
+              onClick={onClose}
+              className="block  h-10  border rounded-md bg-none"
+            >
+              <CgMenuLeft className="text-xl  sm:text-[22px] text-zinc-600" />
+            </Button>
           </div>
         </div>
       </div>
 
       <div
         className={cn(
-          "xl:w-[calc(100%-250px)] mt-6 sm:mt-10 min-[1280px]:float-right px-2 sm:px-6 pt-[5rem] pb-14 sm:pt-24 "
+          "xl:w-[calc(100%-250px)]  min-[1280px]:float-right px-2 sm:px-6 pt-[5rem] pb-14 sm:pt-24 "
         )}
       >
-        <div className="flex flex-col items-start justify-start gap-y-1">
+        <div className="flex flex-col items-start justify-start gap-y-2 sm:gap-y-3">
           {children}
 
           <div
             className={cn(
-              "w-full grid grid-cols-1 sm:grid-cols-2 gap-4",
+              "w-full grid grid-cols-1 mt-6 sm:mt-10 sm:grid-cols-2 gap-4",
               navigation?.length === 1 && "sm:grid-cols-1"
             )}
           >
@@ -69,24 +69,26 @@ export const Container = ({ children }: { children: React.ReactNode }) => {
                 href={link ? link : "/"}
                 key={index}
                 className={cn(
-                  "w-full bg-[#EEEEEE] rounded-lg py-6 px-4 flex items-center justify-between",
-                  index > 0 && "flex-row-reverse"
+                  "w-full bg-[#EEEEEE] rounded-lg p-6 flex items-center justify-between",
+                  page !== "Next" && "flex-row-reverse"
                 )}
               >
-                    <div
+                <div
                   className={cn(
                     "flex flex-col items-start justify-start",
-                    index > 0 && "justify-end items-end"
+                    page !== "Next" && "justify-end items-end"
                   )}
                 >
                   <p className="text-[10px] capitalize sm:text-xs">{page}</p>
-                  <p className="font-semibold capitalize">{name}</p>
+                  <p className="font-semibold capitalize text-cakkie">{name}</p>
                 </div>
                 <IoIosArrowRoundBack
                   size={23}
-                  className={cn("text-cakkie -rotate-180", index > 0 && "rotate-180")}
+                  className={cn(
+                    "text-cakkie ",
+                    page === "Next" && "rotate-180"
+                  )}
                 />
-            
               </Link>
             ))}
           </div>
@@ -107,7 +109,7 @@ function SideNavs({ close, isNav }: { close: () => void; isNav: boolean }) {
         close();
       }}
       className={cn(
-        `fixed z-[70] bottom-0 top-0 border-r sm:top-[4.3rem] pl-2 bg-white left-0 h-[92vh] modal swipeInLeft`,
+        `fixed z-[70] bottom-0 top-0  sm:top-[4.6rem] pl-2 bg-white left-0 h-full sm:h-[92vh] modal swipeInLeft`,
         isNav
           ? "w-full bg-white/50  min-[1280px]:w-[250px]"
           : "max-[1280px]:hidden w-[250px] "
@@ -117,10 +119,10 @@ function SideNavs({ close, isNav }: { close: () => void; isNav: boolean }) {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="  flex flex-col bg-white relative overflow-y-auto items-center h-full w-[250px] cursor-pointer   text-mobile"
+        className="  flex flex-col  border-r bg-white relative overflow-y-auto items-center h-full w-[250px] cursor-pointer   text-mobile"
       >
-        <div className="rounded-lg shadow bg-white border p-3 h-fit mt-2 w-full">
-          <div className="flex font-bold  flex-col mb-10 items-center w-full justify-center">
+        <div className=" bg-white p-3 h-fit mt-2 w-full">
+          <div className="flex   flex-col mb-10 items-center w-full justify-center">
             <ul className="flex flex-col gap-y-1 items-start justify-start w-full">
               {navLinks.map(({ link, name }) => {
                 return (
@@ -140,6 +142,18 @@ function SideNavs({ close, isNav }: { close: () => void; isNav: boolean }) {
               })}
             </ul>
           </div>
+        </div>
+        <div className="absolute bottom-10 px-4 flex inset-x-0 w-full items-center justify-center">
+          <Link
+            href={"/"}
+            className="w-full bg-[#EEEEEE] rounded-lg p-4 flex items-center justify-between"
+          >
+            <div className="flex flex-col items-start justify-start">
+              <p className="text-[10px] capitalize sm:text-xs">Visit</p>
+              <p className="font-semibold capitalize text-cakkie">Cakkie</p>
+            </div>
+            <IoIosArrowRoundBack size={23} className="text-cakkie rotate-180" />
+          </Link>
         </div>
       </div>
     </div>

@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Tokenomics() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>Tokenomics</b>
+     <h2 className="text-desktop font-semibold sm:text-xl">
+        Tokenomics
       </h2>
       <Image
         src="/images/tokenomics.png"
@@ -17,7 +17,7 @@ export default function Tokenomics() {
       />
       <div className="flex gap-y-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold">Initial Distribution:</p>
-        <ul className="flex flex-col w-full gap-y-2 pl-4 items-start list-disc">
+        <ul className="flex flex-col w-full gap-y-2 pl-10 items-start list-disc">
           <li>25%: Community Airdrop and rewards</li>
           <li>5%: Seed Investment</li>
           <li>20%: Development Fund</li>
@@ -29,7 +29,7 @@ export default function Tokenomics() {
       </div>
       <div className="flex gap-y-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold">Staking Governance</p>
-        <ul className="flex flex-col w-full gap-y-2 pl-4 items-start list-disc">
+        <ul className="flex flex-col w-full gap-y-2 pl-10 items-start list-disc">
           <li>
             Users can stake ICING for rewards and participate in governance
             decisions.
@@ -38,7 +38,7 @@ export default function Tokenomics() {
       </div>
       <div className="flex gap-y-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold">Burn Mechanism</p>
-        <ul className="flex flex-col w-full gap-y-2 pl-4 items-start list-disc">
+        <ul className="flex flex-col w-full gap-y-2 pl-10 items-start list-disc">
           <li>
             A percentage of transaction fees will be burned, reducing the total
             supply over time.
@@ -49,12 +49,3 @@ export default function Tokenomics() {
   );
 }
 
-/***
-
-
-Staking and Governance:
-Users can stake ICING for rewards and participate in governance decisions.
-
-Burn Mechanism:
-A percentage of transaction fees will be burned, reducing the total supply over time.
- */

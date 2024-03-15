@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Security() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>Introduction</b>
+      <h2 className="text-desktop font-semibold sm:text-xl">
+        Security and Decentralization
       </h2>
       <Image
         src="/images/security.png"

@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Conclusion() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>Conclusion</b>
+      <h2 className="text-desktop font-semibold sm:text-xl">
+        Conclusion
       </h2>
 
       <div className="flex gap-y-3 flex-wrap w-full justify-start items-start">

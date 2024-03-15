@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Cases() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>Use Cases</b>
+      <h2 className="text-desktop font-semibold sm:text-xl">
+        Use Cases
       </h2>
       <Image
         src="/images/case.png"

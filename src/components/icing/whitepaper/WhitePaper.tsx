@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function WhitePaper() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>WhitePaper:</b> Icing - The sweet utility token on solana blockchain
+     <h2 className="text-desktop  sm:text-xl">
+        <span className="font-semibold">WhitePaper:</span> Icing - The sweet utility token on solana blockchain
       </h2>
       <Image
         src="/images/whitepaper.png"

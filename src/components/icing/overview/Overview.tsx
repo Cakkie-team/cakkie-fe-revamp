@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Overview() {
   return (
     <>
-      <h2 className="sm:text-xl">
-        <b>Token Overview</b>
+     <h2 className="text-desktop font-semibold sm:text-xl">
+    Token Overview
       </h2>
       <Image
         src="/images/token.png"
@@ -21,7 +21,7 @@ export default function Overview() {
           Icing has a fixed total supply of 1 billion tokens. The distribution
           of tokens is as follows:
         </p>
-        <ul className="flex flex-col w-full gap-y-2 pl-4 items-start list-disc">
+        <ul className="flex flex-col w-full gap-y-2 pl-10 items-start list-disc">
           <li>Initial Token Sale (ITS): 40%</li>
           <li>Team and Advisors: 20%</li>
           <li>Reserve: 15%</li>
