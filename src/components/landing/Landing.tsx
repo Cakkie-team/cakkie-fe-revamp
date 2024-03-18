@@ -11,7 +11,8 @@ import {
 
 export default function Landing() {
   return (
-    <>
+    <div className="w-full flex flex-col items-center">
+    <div className="md:w-[1600px] self-center">
       <TopNav />
       <Hero />
       <Catalog />
@@ -20,6 +21,7 @@ export default function Landing() {
       <HowtoOrder />
       <ContactUs />
       <Footer />
-    </>
+    </div>
+    </div>
   );
 }
