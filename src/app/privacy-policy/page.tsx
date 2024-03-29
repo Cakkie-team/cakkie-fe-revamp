@@ -206,12 +206,7 @@ export default function Page() {
               around the website, desktop app, and mobile app, and gather
               demographic information about our overall user base. The following
               technologies may be used to collect information automatically from
-              Cakkie Users:Cakkie and its partners use cookies or similar
-              technologies to analyze trends, administer the website, track users'
-              movements around the website, desktop app, and mobile app, and
-              gather demographic information about our overall user base. The
-              following technologies may be used to collect information
-              automatically from Cakkie Users:
+              Cakkie Users:
             </p>
             <ol className="italic text-auto list-disc px-5 md:px-10">
               <li>
@@ -271,7 +266,7 @@ export default function Page() {
           <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
             <h4 className="text-xl font-semibold">User Profiles</h4>
             <p className="italic">
-              All users are may create a profile, with certain or all information
+              All users may create a profile, with certain or all information
               publicly available.
             </p>
             <p className="text-auto">
@@ -296,7 +291,7 @@ export default function Page() {
           <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
             <h4 className="text-xl font-semibold">Identity Verification</h4>
             <p className="italic">
-              We place a premium on trust in our Service, so we may take steps to
+              We place a premium trust in our Service, so we may take steps to
               verify your identity
             </p>
             <p className="text-auto">
@@ -362,8 +357,7 @@ export default function Page() {
               relevant provisions of our Terms of Service. Any private feedback
               that you provide via the Service about your experience with other
               Cakkie Users of our Service or that is provided about you by other
-              Users will not be publicly viewable via the Service. from Users
-              about our Service. We use this information to respond to your
+              Users will not be publicly viewable via the service. We use this information to respond to your
               inquiries, improve the Service and how our Site functions, and
               develop new products and features.
             </p>
@@ -820,7 +814,7 @@ export default function Page() {
             <p className="text-auto">
               Our Service contains links to other websites. If you choose to click
               on a third-party link, you will be directed to that party's website.
-              The fact that we link to a website is not an endorsement,
+              The fact that we provide link to a website is not an endorsement,
               authorization, or representation of our affiliation with that third
               party, nor is it an endorsement of their privacy or information
               security policies or practices. We do not exercise control over
