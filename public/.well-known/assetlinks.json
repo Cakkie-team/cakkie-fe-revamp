@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.cakkie",
+        "sha256_cert_fingerprints": [
+          "1B:C2:98:0D:D5:41:F0:0B:A6:14:4C:49:F3:80:16:EE:F5:3F:E8:4A:74:4B:B9:7B:1C:A1:8D:6C:B0:26:70:71"
+        ]
+      }
+    }
+  ]
