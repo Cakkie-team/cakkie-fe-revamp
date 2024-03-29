@@ -181,7 +181,7 @@ export default function Page() {
               1d.iii. We welcome your suggestions.
             </h4>
             <p className="italic">
-              We'd love to hear your suggestions for how to improve Cakkie. Here’s
+              We would love to hear your suggestions on how to improve Cakkie. Here’s
               what happens when you share them.
             </p>
             <p className="text-auto">
@@ -349,7 +349,7 @@ export default function Page() {
 
             <ol className="text-auto list-disc px-4 md:px-10">
               <li>
-                lying about your experience, skills, or professional
+              lying about your experience, skills, or professional
                 qualifications
               </li>
               <li>
@@ -357,8 +357,8 @@ export default function Page() {
                 own
               </li>
               <li>
-                using a profile picture that isn’t you, misrepresents your
-                identity, or is someone else
+                using a profile picture that isn’t you, or misrepresenting your
+                identity
               </li>
               <li>
                 impersonating or falsely attributing statements to any person or
@@ -371,16 +371,16 @@ export default function Page() {
                 use a freelancer’s profile if they’ve stopped working together.
               </li>
               <li>
-                would violate our Terms of Service, another website’s terms of
+                violating our Terms of Service, another website’s terms of
                 service, or any similar contract
               </li>
               <li>
-                would go against professional or academic standards or policies –
+                going against professional or academic standards or policies –
                 including improperly submitting someone else’s work as your own,
                 or by ghost-writing essays, tests, or certifications
               </li>
               <li>
-                involves purchasing or requesting a fake review or is connected in
+                purchasing or requesting a fake review that is connected in
                 any way to making or sharing misleading content (like ‘deep fakes’
                 or ‘fake news’) which is intended to deceive others.
               </li>
@@ -393,7 +393,7 @@ export default function Page() {
 
             <ol className="text-auto list-disc px-4 md:px-10">
               <li>
-                lying about your experience, skills, or professional
+                lie about your experience, skills, or professional
                 qualifications
               </li>
               <li>
