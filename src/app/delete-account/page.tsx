@@ -7,7 +7,7 @@ export default function DeleteAccountPage() {
     <div className="flex w-full flex-col items-center min-h-screen">
       <TopNav />
       <section className="flex max-w-[1600px] flex-col gap-4 text-cakkie items-center  mx-auto py-6 px-4 sm:px-10 md:px-20 sm:py-10 flex-grow">
-        <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
+      <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
           <h3 className="text-3xl font-bold">Delete Your Account</h3>
           <h4 className="text-xl font-semibold">
             We understand that circumstances may change, and you may no longer wish to continue using our platform. If you've decided to delete your account, we've made the process simple and straightforward. Just follow the steps below:
@@ -35,6 +35,15 @@ export default function DeleteAccountPage() {
           </p>
           <p className="text-auto">
             <strong>Final Confirmation:</strong> Once you've confirmed your decision to delete your account, the app will process your request. You may receive a final confirmation message indicating that your account has been successfully deleted.
+          </p>
+          <p className="text-auto">
+            <strong>Account Deactivation:</strong> When an account is deleted, we do not delete it immediately until after 30 days. We deactivate the account instead with all the user data intact. During these 30 days, if you log back into your account, the deletion will be cancelled, and your account won't be deleted again except if you delete it again.
+          </p>
+          <p className="text-auto">
+            <strong>Permanent Deletion:</strong> After 30 days, we delete your account permanently. This means that all your information and everything you own on Cakkie will be gone. Some data such as comments, reviews, orders, proposals and messages you sent to people might still remain but won't be tied to any personal identifiers.
+          </p>
+          <p className="text-auto">
+            <strong>Shop Deletion:</strong> Your shop will be deleted 30 days after your account has been deleted permanently.
           </p>
           <p className="text-auto">
             That's it! Your account has now been deleted from our platform. If you ever decide to return, you're always welcome to create a new account. If you have any questions or encounter any issues during the account deletion process, feel free to reach out to our support team for assistance. Thank you for being a part of our community.
