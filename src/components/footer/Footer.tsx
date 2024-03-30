@@ -17,7 +17,7 @@ export function Footer() {
 
         <div className="flex flex-col items-start gap-y-2 justify-start">
           <Link href="/privacy-policy">Privacy Policy</Link>
-          <Link href="/terms-and-condition">Terms and Conditions</Link>
+          <Link href="/terms-and-conditions">Terms and Conditions</Link>
         </div>
 
         <div className="w-full flex flex-col gap-y-1 items-end justify-end">
