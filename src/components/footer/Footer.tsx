@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function Footer() {
   const socialLinks = [
-    { link: "/", image: "/svg/instagram.svg" },
-    { link: "/", image: "/svg/facebook.svg" },
-    { link: "/", image: "/svg/linkedIn.svg" },
-    { link: "/", image: "/svg/twitter.svg" },
+    { link: "https://www.instagram.com/cakkiefoods", image: "/svg/instagram.svg" },
+    { link: "https://web.facebook.com/CakkieFoods", image: "/svg/facebook.svg" },
+    { link: "https://www.linkedin.com/company/cakkie/", image: "/svg/linkedIn.svg" },
+    { link: "https://twitter.com/cakkiefoods", image: "/svg/twitter.svg" },
   ];
   return (
     <footer className="w-full ">
@@ -24,7 +24,7 @@ export function Footer() {
           <p>Contact us</p>
           <div className="flex items-center gap-x-4 sm:gap-x-6">
             {socialLinks.map(({ link, image }) => (
-              <Link key={image} href={link}>
+              <Link key={image} href={link} target="blank">
                 <Image
                   src={image}
                   alt="social"
