@@ -284,7 +284,7 @@ export default function Page() {
             your Profile via your account and may choose to limit who can view
             certain content you post to your Profile. Additionally, you can request your
             account to be deleted by following the instructions at <span className="font-semibold">
-              <a href="https://cakkie.com/account">
+              <a href="https://cakkie.com/delete-account">
                 delete account
               </a>
             </span>. Also, you may update your 
