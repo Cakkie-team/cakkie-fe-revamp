@@ -10,9 +10,9 @@ export default function Vision() {
       </h2>
       <Image
         src="/images/vision.png"
-        width={1000}
-        height={600}
-        className="w-full h-[250px] sm:h-[370px]"
+        width={2000}
+        height={800}
+        className="w-full h-[250px] sm:h-[370px] 2xl:h-[450px]"
         alt="whitepaper"
       />
       <div className="flex gap-y-3 flex-wrap w-full justify-start items-start">

@@ -10,9 +10,9 @@ export default function Cases() {
       </h2>
       <Image
         src="/images/case.png"
-        width={1000}
-        height={600}
-        className="w-full h-[250px] sm:h-[370px]"
+        width={2000}
+        height={800}
+        className="w-full h-[250px] sm:h-[370px] 2xl:h-[450px]"
         alt="case"
       />
 

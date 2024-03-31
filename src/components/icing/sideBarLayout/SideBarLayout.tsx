@@ -39,14 +39,15 @@ export const Container = ({ children }: { children: React.ReactNode }) => {
                 className="w-[100px]  h-[60px] object-contain"
               />
             </div>
-            <Button
+           
+          </div>
+          <Button
               type="button"
               onClick={onClose}
               className="block xl:hidden  h-10  border rounded-md bg-none"
             >
               <CgMenuLeft className="text-xl  sm:text-[22px] text-zinc-600" />
             </Button>
-          </div>
         </div>
       </div>
 
