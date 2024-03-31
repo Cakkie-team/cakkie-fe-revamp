@@ -3,8 +3,8 @@ import { TopNav } from "@/components/landing/_components";
 
 export default function Page() {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div className="md:w-[1600px] self-center">
+    <div className="">
+      
         <TopNav />
         <section className="flex flex-col gap-4 text-cakkie items-center justify-center w-full mx-auto py-6 px-4 sm:px-10 md:px-20 sm:py-10">
           <div className="flex flex-col justify-start items-start gap-4 text-cakkie">
@@ -879,6 +879,6 @@ export default function Page() {
         </section>
         <Footer />
       </div>
-    </div>
+    
   );
 }

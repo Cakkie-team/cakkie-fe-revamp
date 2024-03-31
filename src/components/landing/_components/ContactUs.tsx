@@ -34,7 +34,7 @@ export function ContactUs() {
                     <Input
                       placeholder="Name"
                       type="text"
-                      className="w-full h-12 bg-transparent px-4 rounded-lg "
+                      className="w-full h-12 2xl:h-14 bg-transparent px-4 rounded-lg "
                       {...field}
                     />
                   </FormControl>
@@ -53,7 +53,7 @@ export function ContactUs() {
                     <Input
                       placeholder="Email Address"
                       type="email"
-                      className="w-full h-12 bg-transparent px-4 rounded-lg "
+                      className="w-full h-12 2xl:h-14 bg-transparent px-4 rounded-lg "
                       {...field}
                     />
                   </FormControl>
@@ -70,7 +70,7 @@ export function ContactUs() {
                   <FormControl>
                     <Textarea
                       {...field}
-                      className="w-full h-48 resize-none rounded-lg p-4"
+                      className="w-full h-48 2xl:h-52 resize-none rounded-lg p-4"
                     ></Textarea>
                   </FormControl>
                   <FormMessage />
@@ -79,7 +79,7 @@ export function ContactUs() {
             />
           </form>
         </Form>
-        <Button className="font-medium w-[150px] self-end text-[#FFF5DC] bg-cakkie rounded-md h-12">
+        <Button className="font-medium w-[150px] self-end text-[#FFF5DC] bg-cakkie px-8 sm:px-12 rounded-md h-12 2xl:h-14">
           Submit
         </Button>
       </div>
@@ -94,9 +94,9 @@ export function ContactUs() {
       <Image
         src="/images/ice-cream.png"
         alt="cream"
-        width={300}
-        height={300}
-        className="w-fit h-fit absolute object-contain left-0 -bottom-20 z-20 "
+        width={80}
+        height={80}
+        className="w-fit h-fit absolute object-contain left-0 -bottom-4 z-20 "
       />
     </div>
   );

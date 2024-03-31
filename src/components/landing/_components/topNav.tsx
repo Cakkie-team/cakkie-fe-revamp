@@ -38,13 +38,15 @@ export function TopNav() {
   return (
     <>
       <header className="w-full flex py-3 px-3 z-[100] backdrop-blur sticky top-0 inset-x-0 sm:px-6 items-center justify-between ">
-        <Image
-          src="./svg/logo.svg"
-          alt="logo"
-          width={200}
-          height={200}
-          className="w-fit h-fit"
-        />
+        <Link href="/">
+          <Image
+            src="./svg/logo.svg"
+            alt="logo"
+            width={200}
+            height={200}
+            className="w-fit h-fit"
+          />
+        </Link>
 
         <nav className="hidden sm:flex items-center gap-x-4">
           {links.map(({ name, link }) => (

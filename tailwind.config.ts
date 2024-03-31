@@ -23,7 +23,13 @@ const config: Config = {
 			fontSize: {
 				mobile: "13px",
 				desktop:"15px"
-			}
+			},
+			gridTemplateColumns: {
+				'16': 'repeat(16, minmax(0, 1fr))'
+			},
+			gridColumn: {
+				'span-15': 'span 15 / span 15',
+			  }
 		},
 	},
 	plugins: [],
