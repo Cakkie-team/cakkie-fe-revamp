@@ -179,15 +179,7 @@ export function About() {
               className="h-12 w-[100px] md:w-fit md:h-fit"
             />
           </Link>
-          <Link href={"/"}>
-            <Image
-              src="/svg/apple.svg"
-              width={300}
-              height={200}
-              alt="appl"
-              className="h-12 w-[100px] md:w-fit md:h-fit"
-            />
-          </Link>
+        
         </div>
       </div>
     </div>

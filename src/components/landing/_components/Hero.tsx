@@ -29,24 +29,21 @@ export function Hero() {
             craftsmanship.
           </p>
           <div className="flex items-center gap-x-2">
-          <Link href={"https://play.google.com/store/apps/details?id=com.cakkie&pcampaignid=web_share"} target="blank" className="">
-            <Image
-              src="/svg/googleplay.svg"
-              width={300}
-              height={200}
-              alt="ggl"
-              className="h-12 w-[100px] md:w-fit md:h-fit"
-            />
-          </Link>
-          <Link href={"/"}>
-            <Image
-              src="/svg/apple.svg"
-              width={300}
-              height={200}
-              alt="appl"
-              className="h-12 w-[100px] md:w-fit md:h-fit"
-            />
-          </Link>
+            <Link
+              href={
+                "https://play.google.com/store/apps/details?id=com.cakkie&pcampaignid=web_share"
+              }
+              target="blank"
+              className=""
+            >
+              <Image
+                src="/svg/googleplay.svg"
+                width={300}
+                height={200}
+                alt="ggl"
+                className="h-12 w-[100px] md:w-fit md:h-fit"
+              />
+            </Link>
           </div>
         </div>
       </div>

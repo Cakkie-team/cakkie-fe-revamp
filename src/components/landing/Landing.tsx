@@ -11,7 +11,7 @@ import {
 
 export default function Landing() {
   return (
-    <>
+    <div>
       <TopNav />
       <Hero />
       <Catalog />
@@ -20,6 +20,6 @@ export default function Landing() {
       <HowtoOrder />
       <ContactUs />
       <Footer />
-    </>
+    </div>
   );
 }
