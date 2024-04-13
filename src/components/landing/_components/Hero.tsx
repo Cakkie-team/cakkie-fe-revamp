@@ -31,7 +31,7 @@ export function Hero() {
           <div className="flex items-center gap-x-2">
             <Link
               href={
-                "https://play.google.com/store/apps/details?id=com.cakkie&pcampaignid=web_share"
+                "https://play.google.com/store/apps/details?id=com.cakkie&referrer=utm_source%3Drefer%26utm_content%3Dbthx1PGP"
               }
               target="blank"
               className=""
