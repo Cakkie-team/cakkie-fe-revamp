@@ -1,5 +1,5 @@
-import Tokenomics from "@/components/icing/tokenomics/Tokenomics";
+import Cases from "@/components/icing/cases/Case";
 
 export default function Page() {
-    return <Tokenomics/>
+    return <Cases/>
 }
