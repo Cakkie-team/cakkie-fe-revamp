@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function RoadMap() {
   return (
     <>
-     <h2 className="text-desktop font-semibold sm:text-xl">
+      <h2 className="text-desktop font-semibold sm:text-xl">
         RoadMap
       </h2>
       <Image
@@ -37,6 +37,7 @@ export default function RoadMap() {
             support.
           </li>
           <li>Launch Icing token on the Solana blockchain.</li>
+          <li>Destribute airdrops according to the earnings on Q1.</li>
           <li>
             Integrate Icing as the primary medium of exchange within the Cakkie
             platform.
