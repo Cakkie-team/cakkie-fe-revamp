@@ -6,7 +6,7 @@ export default function WhitePaper() {
   return (
     <>
      <h2 className="text-desktop  sm:text-xl">
-        <span className="font-semibold">WhitePaper:</span> Icing - The sweet utility token on solana blockchain
+        <span className="font-semibold">WhitePaper:</span> Icing - The sweet utility token on Ton blockchain
       </h2>
       <Image
         src="/images/whitepaper.png"
@@ -18,7 +18,7 @@ export default function WhitePaper() {
       <div className="flex gap-y-3 flex-wrap w-full justify-start items-start">
         <p className="font-semibold">Abstract</p>
         <p className="text-justify leading-6">
-          Icing is a versatile utility token built on the Solana blockchain,
+          Icing is a versatile utility token built on the Ton blockchain,
           specifically designed to cater to the needs of users within the Cakkie
           ecosystem. Cakkie, a mobile application tailored for bakers and cake
           enthusiasts, integrates Icing as its native token to enhance user

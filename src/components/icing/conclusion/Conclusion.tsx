@@ -11,7 +11,7 @@ export default function Conclusion() {
         <p className="text-justify leading-6">
           Icing token serves as the backbone of the Cakkie ecosystem, enabling
           seamless transactions and fostering community engagement among bakers
-          and cake enthusiasts. With its integration on the Solana blockchain,
+          and cake enthusiasts. With its integration on the Ton blockchain,
           Icing offers users fast, secure, and cost-effective means of exchange
           within the platform. As Cakkie continues to grow and innovate, Icing
           will play a crucial role in shaping the future of social networking

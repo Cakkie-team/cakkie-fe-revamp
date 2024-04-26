@@ -20,7 +20,7 @@ export default function Introduction() {
           Cakkie, the leading social media platform for bakers and cake
           enthusiasts, has introduced Icing as its native utility token to
           enhance user experience and foster community engagement. Icing is a
-          digital asset built on the Solana blockchain, providing users with
+          digital asset built on the Ton blockchain, providing users with
           fast, secure, and cost-effective transactions. This whitepaper
           presents the tokenomics, roadmap, and use cases of Icing, showcasing
           its integral role in powering the Cakkie platform.
