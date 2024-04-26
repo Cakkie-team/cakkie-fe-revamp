@@ -19,7 +19,7 @@ export default function Security() {
         <p className="text-justify leading-6">
           The Icing (ICING) cryptocurrency is designed to empower the vibrant
           Cakkie community—a social media platform dedicated to bakers and cake
-          enthusiasts. By leveraging the Ton Blockchain, ICING serves as a
+          enthusiasts. By leveraging the TON Blockchain, ICING serves as a
           versatile utility token, facilitating seamless transactions, tipping,
           and job proposals within the ecosystem.
         </p>

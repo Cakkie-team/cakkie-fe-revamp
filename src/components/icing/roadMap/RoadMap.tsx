@@ -36,7 +36,7 @@ export default function RoadMap() {
             Conduct token presale to seed initial liquidity and community
             support.
           </li>
-          <li>Launch Icing token on the Ton blockchain.</li>
+          <li>Launch Icing token on the TON blockchain.</li>
           <li>Destribute airdrops according to the earnings on Q1.</li>
           <li>
             Integrate Icing as the primary medium of exchange within the Cakkie

@@ -6,7 +6,7 @@ export default function WhitePaper() {
   return (
     <>
      <h2 className="text-desktop  sm:text-xl">
-        <span className="font-semibold">WhitePaper:</span> Icing - The sweet utility token on Ton blockchain
+        <span className="font-semibold">WhitePaper:</span> Icing - The sweet utility token on TON blockchain
       </h2>
       <Image
         src="/images/whitepaper.png"
