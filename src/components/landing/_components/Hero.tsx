@@ -20,13 +20,11 @@ export function Hero() {
               Welcome to Cakkie
             </h1>
             <h3 className="font-semibold playfair italic text-xl sm:text-3xl md:text-4xl">
-              Unleash the Sweet Sensation
+              Where Cake Lovers Connect, Create, and Celebrate!
             </h3>
           </div>
           <p className="flex flex-wrap items-start font-medium max-w-lg  text-[#FFF5DC] text-sm sm:text-base md:text-lg">
-            Step into a realm where cake enthusiasts and businesses converge,
-            indulging in the exquisite world of cakes and confectionery
-            craftsmanship.
+            Discover a vibrant community of cake enthusiasts, talented bakers, and confectionery artisans. Buy, sell, and share your passion for cakes in a fun, engaging, and transparent marketplace.
           </p>
           <div className="flex items-center gap-x-2">
             <Link
