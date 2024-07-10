@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <footer className="w-full ">
       <div className="w-full text-[#FFF5DC] bg-cakkie grid grid-cols-1 py-4 px-4 md:px-8 lg:px-10 sm:py-6 md:grid-cols-3">
-        <h1 className="font-semibold text-[#FFF5DC] text-4xl playfair hero italic">
+        <h1 className="font-bold text-[#FFF5DC] text-5xl hero italic">
           Cakkie Foods LTD
         </h1>
 
