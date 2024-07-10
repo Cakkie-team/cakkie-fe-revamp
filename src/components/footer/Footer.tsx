@@ -12,7 +12,7 @@ export function Footer() {
     <footer className="w-full ">
       <div className="w-full text-[#FFF5DC] bg-cakkie grid grid-cols-1 py-4 px-4 md:px-8 lg:px-10 sm:py-6 md:grid-cols-3">
         <h1 className="font-semibold text-[#FFF5DC] text-7xl playfair hero italic">
-          Cakkie
+          Cakkie Foods LTD
         </h1>
 
         <div className="flex flex-col items-start gap-y-2 justify-start">
