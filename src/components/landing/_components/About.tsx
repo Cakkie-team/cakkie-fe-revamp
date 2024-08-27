@@ -170,7 +170,10 @@ export function About() {
           Connect and collaborate with fellow cake designers, sharing ideas and celebrating your love for baking together.
         </p>
         <div className="flex items-center gap-x-2 sm:gap-x-4">
-          <Link href={"https:https://play.google.com/store/apps/details?id=com.cakkie&referrer=utm_source%3Drefer%26utm_content%3Dbthx1PGP"} target="blank" className="">
+          <Link href={
+            "https://drive.google.com/file/d/1TffJ3v6UPK2vKz4HnnRFCJ1rd-Iy_ekE/view?usp=drive_link"
+            // "https:https://play.google.com/store/apps/details?id=com.cakkie&referrer=utm_source%3Drefer%26utm_content%3Dbthx1PGP"
+            } target="blank" className="">
             <Image
               src="/svg/googleplay.svg"
               width={300}

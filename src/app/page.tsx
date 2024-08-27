@@ -6,22 +6,23 @@ import { NextPage } from 'next';
 interface PageProps {
   searchParams?: {
     referral?: string;
-    verify?:string;
+    verify?: string;
   };
 }
 
-const Page: NextPage<PageProps> =({searchParams})=> {
-  if(searchParams?.referral){
-   //redirect to referral page
-   redirect(`https://play.google.com/store/apps/details?id=com.cakkie&referrer=utm_source%3Drefer%26utm_content%3D${searchParams.referral}`)
+const Page: NextPage<PageProps> = ({ searchParams }) => {
+  if (searchParams?.referral) {
+    //redirect to referral page
+    redirect('https://drive.google.com/file/d/1TffJ3v6UPK2vKz4HnnRFCJ1rd-Iy_ekE/view?usp=drive_link')
+    //  redirect(`https://play.google.com/store/apps/details?id=com.cakkie&referrer=utm_source%3Drefer%26utm_content%3D${searchParams.referral}`)
   }
-  if(searchParams?.verify){
-       //redirect to referral page
-   redirect(`https://app.cakkie.com/verify=true`)
+  if (searchParams?.verify) {
+    //redirect to referral page
+    redirect(`https://app.cakkie.com/verify=true`)
   }
-  return ( 
+  return (
     <div className="bg-[#FFF5D4] w-full h-full">
-      <Landing/>
+      <Landing />
     </div>
   )
 }
