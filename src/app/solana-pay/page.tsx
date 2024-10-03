@@ -34,7 +34,7 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
         `https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}`
       );
       const data: PaymentRequest = await response.json();
-      console.log(data)
+      console.log(response)
       return data;
     } catch (error) {
       console.error('Error fetching payment request:', error);
