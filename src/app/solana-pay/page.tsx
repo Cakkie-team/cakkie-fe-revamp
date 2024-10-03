@@ -29,13 +29,12 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
 
   // Function to fetch the payment request
   const fetchPaymentRequest = async (): Promise<PaymentRequest | null> => {
-    console.log('params',{searchParams})
     try {
       const response = await fetch(
         `https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}`
       );
       const data: PaymentRequest = await response.json();
-      console.log(response,`https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}` )
+      console.log(response, `https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}`)
       return data;
     } catch (error) {
       console.error('Error fetching payment request:', error);
@@ -109,6 +108,8 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
         const isVerified = await verify();
         if (isVerified) {
           clearInterval(interval); // Stop checking if the transaction is successful
+          // Redirect to home page or success page
+          window.location.href = '/success';
         }
       }, 2000); // Retry every 2 seconds
     }
