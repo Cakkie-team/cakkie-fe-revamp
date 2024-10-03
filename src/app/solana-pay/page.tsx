@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { createQR } from '@solana/pay'; // Import Solana Pay QR generation
 import { NextPage } from 'next';
+import { Button } from "@/components";
+
 
 interface PaymentRequest {
   url: string;
@@ -159,12 +161,12 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
           )}
 
           {/* Mobile Button to Open Wallet */}
-          <button
-            className="bg-blue-500 text-white px-4 py-2 mt-4 rounded-lg block md:hidden"
+          <Button
+            className="px-4 py-2 mt-4 rounded-lg md:hidden block text-[#FFF5DC] bg-cakkie"
             onClick={openWallet}
           >
             Open Wallet to Pay
-          </button>
+          </Button>
         </>
       ) : (
         <div className="flex flex-col items-center justify-center h-screen">
