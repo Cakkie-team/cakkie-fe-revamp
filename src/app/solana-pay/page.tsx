@@ -29,6 +29,7 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
 
   // Function to fetch the payment request
   const fetchPaymentRequest = async (): Promise<PaymentRequest | null> => {
+    console.log({searchParams})
     try {
       const response = await fetch(
         `https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}`
