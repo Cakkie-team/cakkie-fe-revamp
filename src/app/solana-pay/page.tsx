@@ -16,9 +16,9 @@ interface PaymentRequest {
 
 interface PageProps {
   searchParams?: {
-    type: string;
+    currencySymbol: string;
     userId: string;
-    productId: string;
+    desc: string;
     price: string;
   };
 }
@@ -33,10 +33,9 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
   const fetchPaymentRequest = async (): Promise<PaymentRequest | null> => {
     try {
       const response = await fetch(
-        `https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}`
+        `https://dev.api.cakkie.com/solana/request?currencySymbol=${searchParams?.currencySymbol}&userId=${searchParams?.userId}&desc=${searchParams?.desc}&price=${searchParams?.price}`
       );
       const data: PaymentRequest = await response.json();
-      console.log(response, `https://dev.api.cakkie.com/solana/request?type=${searchParams?.type}&userId=${searchParams?.userId}&productId=${searchParams?.productId}&price=${searchParams?.price}`)
       return data;
     } catch (error) {
       console.error('Error fetching payment request:', error);
