@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { createQR } from '@solana/pay'; // Import Solana Pay QR generation
 import { NextPage } from 'next';
 import { Button } from "@/components";
+import { useSearchParams } from 'next/navigation'; // For Next.js 13 app router
+
 
 
 interface PaymentRequest {
@@ -14,26 +16,20 @@ interface PaymentRequest {
   reference: string;
 }
 
-interface PageProps {
-  searchParams?: {
-    currencySymbol: string;
-    userId: string;
-    desc: string;
-    price: string;
-  };
-}
 
-const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
+const SolanaPay =()=> {
   const [qrCode, setQrCode] = useState<any | null>(null);
   const [loading, setLoading] = useState(true); // State to track loading
   const [payment, setPayment] = useState<PaymentRequest | null>(null);
   const [isConfirmed, setIsConfirmed] = useState(false); // State to track if the transaction is confirmed
+  const searchParam = useSearchParams(); // Fetch query parameters
+
 
   // Function to fetch the payment request
   const fetchPaymentRequest = async (): Promise<PaymentRequest | null> => {
     try {
       const response = await fetch(
-        `https://dev.api.cakkie.com/solana/request?currencySymbol=${searchParams?.currencySymbol}&userId=${searchParams?.userId}&desc=${searchParams?.desc}&price=${searchParams?.price}`
+        `https://dev.api.cakkie.com/solana/request?currencySymbol=${searchParam.get('currencySymbol')}&userId=${searchParam.get('userId')}&desc=${searchParam.get('desc')}&price=${searchParam.get('price')}`
       );
       const data: PaymentRequest = await response.json();
       return data;
@@ -57,10 +53,10 @@ const SolanaPay: NextPage<PageProps> = ({ searchParams }) => {
     };
 
     // Call the function to generate the QR code on component mount
-    if (searchParams) {
+    if (searchParam.get('userId')) {
       generateQrCode();
     }
-  }, [searchParams]);
+  }, [searchParam.get('userId')]);
 
   // Append the QR code to the div after it's created
   useEffect(() => {
